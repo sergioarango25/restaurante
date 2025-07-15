@@ -1,0 +1,9 @@
+En este codigo podre visualizar mi progreso, en donde revisare si ya no tengo tanto codigo repedito y seguire mejorando 
+en cada vez entregar un codigo mas limpio me siento feliz con el progreso pero tendre que seguir puliendo el codigo y aprender de mis errores
+
+
+
+
+
+ESTA PAGINA
+Es un demo el cual sirve para restaurantes el cual me falta conectar una base de datos y seguir mejorando en html, css y js

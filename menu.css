@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(90deg, brown, red );
+    overflow-y: scroll;
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 10px 10px 10px  black;
+}
+ /* Esta linea sirve para configurar el contenedor y ajustar las imagenes en este caso es para que quede una encima de la otra */
+.menu {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+}
+
+ /* Esta linea sirve para darle estilo a las imagenes y organizar */
+.menu img { 
+  width: 30%;
+  height: 20rem;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 10);
+  transition: transform 0.3s ease;
+  outline: none;
+}
+
+.menu img:hover {
+  transform: scale(1.1);
+}
+
+.salida{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    width: 60px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.mensaje2{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.enviar{
+    position: absolute;
+    top: 6%;
+    right: -2%;
+    height: 50px;
+    width: 10%;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+    border-style: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 10);
+    font-size: 20px;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.enviar:hover{
+    transform:  translate(-50%,-50%)  scale(1.1);
+}
+
+hr{
+    width: 100vh;
+}
+
