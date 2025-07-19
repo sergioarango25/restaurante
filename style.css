@@ -1,10 +1,22 @@
-body{
-    background: linear-gradient(to left, red, brown, red);
-    overflow-y: hidden;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+body {
+  background-position: center center;    /* Centrado horizontal y vertical */
+  background-repeat: no-repeat;
+  background-size: cover;                /* Hace que cubra toda la pantalla */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+}
 
+.fondo{   
+  position: fixed;
+  top: 55%;
+  left: 52%;      
+  transform: translate(-50%,-50%);          
+  height: 100vh;  
+  width: 110%;                               
+  overflow: hidden;  
+  z-index: -10;
 }
 
 header{
@@ -14,46 +26,34 @@ header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 55px;
     color: white;
-    animation: mover 11s linear infinite;
-    z-index: -1;
 }
 
-@keyframes mover{
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
 
-}
 
 .titulo{
     text-align: center;
     white-space: nowrap;
     box-sizing: border-box;
+    letter-spacing: 5px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 55px;
     color: white;
-    text-shadow: 0 10px 10px black;
-    height: fit-content;
-    background-color: #fff;
-    backdrop-filter: blur(10px);
-    background: rgb(255, 255, 255, 0.3);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
-    background-color: rgba(0,0,0,0.3);  /* fondo semitransparente */
-    padding: 10px;
+    height: auto;
+    background-color: red;
+    padding: 5px;
 }
 
 
 
 img{
-    position: fixed;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    height: 20em;
-    box-shadow: 0 10px 10px 10px rgb(0,0,0,0.9);
+  position: fixed;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  height: 20em;
+  box-shadow: 0 5px 15px 10px rgb(0,0,0,10);
+  border-radius: 15px;
+
 }
 
 
@@ -63,43 +63,59 @@ img{
   top: 50%;
   left: 65%;
   transform: translate(-50%,-50%);
-  max-width: 60rem;
-  height: 45%;
-  width: 50%;
+  width: 50%; 
+  max-width: 700px; 
   color: #fff;
-  background-color: rgba(0,0,0,10);
-  padding: 10px;
-  border: 1px solid white;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border: 3px solid white;
   border-radius: 10px;
   word-wrap: break-word;
-  box-shadow: 0 0 15px rgb(0,0,0,10);
-  font-size: 23px;
+  box-shadow: 20px 10px 10px rgb(0,0,0,0.8);
 }
 
+
+
+.texto h2{
+    font-size: 2.3em;
+}
+
+.texto p{
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+
+
 .btn{
-    position: fixed;
-    text-align: center;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50px;
-    width: 90px;
-    font-size: 20px;
-    background:linear-gradient(to bottom, red);
-    border-radius: 20px;
-    border-style: none;
-    color: white;
-    border: 2px solid gray;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    transition: transform 0.8s ease-in, box-shadow 0.2s ease;
+  position: fixed;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 150px;
+  font-size: 2em;
+  letter-spacing: 2px;
+  background-color: red;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  margin-bottom: 40px;
 }
 
 .btn:hover{
-    transform: translate(-50%,-50%)   scale(1.1);
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-.btn:active{
-    transform: translate(-50%,-50%)  scale(0.95);
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  transform: translate(-50%,-50%)   scale(1.2);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0,10 );
 }
